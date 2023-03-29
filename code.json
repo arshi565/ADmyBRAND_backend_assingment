@@ -1,0 +1,46 @@
+{
+  "name": "Merkle Tree Root",
+  "description": "A program that computes the Merkle tree root corresponding to a set of transactions using SHA-256.",
+  "implementation": {
+    "language": "Golang",
+    "version": "1.16 or later"
+  },
+  "requirements": [
+    "The program must output the Merkle root.",
+    "SHA-256 must be used to perform the hashing at each step, you may use a library for this.",
+    "The code must be tested and documented."
+  ],
+  "usage": {
+    "input": [
+      {
+        "name": "transactions.txt",
+        "description": "A file containing hexadecimal transaction hashes, one per line."
+      }
+    ],
+    "output": [
+      {
+        "name": "Merkle root",
+        "description": "The Merkle root in hexadecimal format."
+      }
+    ]
+  },
+  "installation": {
+    "steps": [
+      "Clone the repository.",
+      "Build the program."
+    ],
+    "commands": [
+      "git clone https://github.com/YOUR-USERNAME/merkle-tree-root.git",
+      "cd merkle-tree-root",
+      "go build"
+    ]
+  },
+  "testing": {
+    "description": "A script that generates a random set of transactions, computes the Merkle root using both the implemented code and a reference implementation, and verifies that the results match.",
+    "command": "./test.sh"
+  },
+  "documentation": {
+    "description": "The code is documented using GoDoc comments.",
+    "command": "godoc -http=:6060"
+  }
+}
